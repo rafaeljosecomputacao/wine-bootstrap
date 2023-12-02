@@ -1,0 +1,48 @@
+/* Colors */
+:root {
+    --primary-color: #6C63FF;
+    --secondary-color: #C2C2C2;
+    --light-color: #F5F5F5;
+    --dark-color: #1F1F1F;
+    --primary-bg-color: #EBEBEB;
+    --secondary-bg-color: #292929;
+}
+
+/* General */
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+}
+
+/* Utilities */
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.light-color {
+    color: var(--light-color);
+}
+
+.dark-color {
+    color: var(--dark-color);
+}
+
+.primary-bg-color {
+    background-color: var(--primary-bg-color);
+}
+
+.secondary-bg-color {
+    background-color: var(--secondary-bg-color);
+}
