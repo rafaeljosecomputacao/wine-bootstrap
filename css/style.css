@@ -46,3 +46,82 @@ body {
 .secondary-bg-color {
     background-color: var(--secondary-bg-color);
 }
+
+/* Header */
+#header .navbar {
+    background-color: var(--primary-bg-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#header .navbar-brand span {
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+#header .navbar-toggler {
+    border: none;
+}
+
+#header .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#header .navbar-toggler i,
+#header .offcanvas-header i {
+    color: var(--primary-color);
+}
+
+#header .navbar-toggler i {
+    font-size: 2em;
+}
+
+#header .offcanvas-title {
+    font-size: 1.5em;
+}
+
+#header .offcanvas-header button {
+    border: none;
+    font-size: 2.5em;
+}
+
+#header .nav-link {
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: .5s;
+}
+
+#header .nav-link:hover {
+    color: var(--dark-color);
+}
+
+#header .nav-link.active {
+    color: var(--dark-color);
+}
+
+#header .btn {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: 20px;
+    border: none;
+    padding: 4px 16px;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+#header .btn:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+/* Responsive */
+@media screen and (min-width: 1024px) {
+    /* Header */
+    #header .navbar-nav li {
+        margin-right: 1em;
+    }
+
+    #header .btn {
+        margin-top: 0;
+    }
+}
