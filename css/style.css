@@ -170,6 +170,24 @@ body {
     margin-bottom: 0;
 }
 
+/* About Section */
+#about-section .about-image-container {
+    height: 400px;
+}
+
+#about-section .about-image-container img {
+    border: 2px solid var(--primary-color);
+}
+
+#about-section .about-text-container {
+    height: 100%;
+    margin-top: 32px;
+}
+
+#about-section .about-text-container h4 {
+    margin-bottom: 26px;
+}
+
 /* Responsive */
 @media screen and (min-width: 425px) {
     /* Main */
@@ -186,6 +204,12 @@ body {
     /* Main */
     #main .carousel-item img {
         height: 75vh;
+    } 
+
+    /* About Section */
+    #about-section .about-text-container {
+        border-right: 2px solid var(--primary-color);
+        margin-top: 0;
     }
 }
 
@@ -228,5 +252,10 @@ body {
 
     .main-title {
         height: 15vh;
+    }
+
+    /* About Section */
+    #about-section {
+        padding: 0 100px;
     }
 }
