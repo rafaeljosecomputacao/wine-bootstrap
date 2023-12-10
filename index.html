@@ -26,7 +26,7 @@
 <body>
     <!-- Header --> 
     <header id="header">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#"><span class="text-uppercase primary-color">Winery</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
                 </button>
                 <div class="offcanvas offcanvas-end primary-bg-color" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title text-uppercase fw-bold primary-color" id="offcanvasNavbarLabel">
+                        <h5 class="offcanvas-title fw-bold primary-color" id="offcanvasNavbarLabel">
                             Menu
                         </h5>
                         <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -44,22 +44,21 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#main">Home</a>
+                                <a class="nav-link" href="#main">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about-section">About</a>
                             </li> 
                             <li class="nav-item">
-                                <a class="nav-link" href="#product-section">Product</a>
+                                <a class="nav-link" href="#product-section">Products</a>
                             </li> 
                             <li class="nav-item">
-                                <a class="nav-link" href="#event-section">Event</a>
+                                <a class="nav-link" href="#event-section">Events</a>
                             </li> 
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact-section">Contact</a>
                             </li>          
                         </ul>
-                        <button class="btn" type="submit">Login</button>
                     </div>
                 </div>
             </div>
@@ -97,25 +96,25 @@
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-captions" data-bs-slide="prev">
-                <span aria-hidden="true"><i class="bi bi-caret-left"></i></span>
+                <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-captions" data-bs-slide="next">
-                <span aria-hidden="true"><i class="bi bi-caret-right"></i></span>
+                <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="main-title">
+    </main>
+    <!-- About Section --> 
+    <section id="about-section" class="container">
+        <div class="title">
             <h1 class="fw-bold dark-color">
-                Welcome to the <span class="fw-bold text-uppercase primary-color">Winery</span>
+                Welcome to the <span class="fw-bold primary-color">Winery</span>
             </h1>
             <p class="dark-color">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit
             </p>
         </div>
-    </main>
-    <!-- About Section --> 
-    <section id="about-section" class="container">
         <div class="row">
             <div class="col-12 col-md-5 col-lg-4">
                 <div class="about-image-container">
@@ -137,6 +136,88 @@
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
+    <!-- Product Section --> 
+    <section id="product-section">
+        <div class="title">
+            <h1 class="fw-bold dark-color">
+                Check out our <span class="fw-bold primary-color">Products</span>
+            </h1>
+            <p class="dark-color">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card mb-4 mb-lg-0">
+                        <img src="img/card-product-1.png" class="card-img-top" alt="Bottle of wine">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold primary-color">Cardilla</h6>
+                            <p class="card-text mb-0 dark-color">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="fw-bold primary-color">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card mb-4 mb-lg-0">
+                        <img src="img/card-product-2.png" class="card-img-top" alt="Bottle of wine">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold primary-color">Travessia</h6>
+                            <p class="card-text mb-0 dark-color">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="fw-bold primary-color">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card mb-4 mb-lg-0">
+                        <img src="img/card-product-3.png" class="card-img-top" alt="Bottle of wine">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold primary-color">Chateau</h6>
+                            <p class="card-text mb-0 dark-color">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="fw-bold primary-color">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card mb-0 mb-lg-0">
+                        <img src="img/card-product-4.png" class="card-img-top" alt="Bottle of wine">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold primary-color">Boylland</h6>
+                            <p class="card-text mb-0 dark-color">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="fw-bold primary-color">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid product-banner secondary-bg-color">
+            <div class="product-text">
+                <h2 class="primary-color">Up to 20% off</h2>
+                <h1 class="fw-bold light-color">Winery</h1>
+                <p class="secondary-color">Get best price</p>
+                <button type="button" class="btn">Learn More</button>
+            </div>
+            <div class="product-image">
+                <img src="img/product-banner.png" alt="Bottle of wine">
+            </div>
+        </div>
+    </section> 
 </body>
 </html>

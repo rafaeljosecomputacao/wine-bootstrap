@@ -2,7 +2,7 @@
 :root {
     --primary-color: #6C63FF;
     --secondary-color: #C2C2C2;
-    --light-color: #F5F5F5;
+    --light-color: #fff;
     --dark-color: #1F1F1F;
     --primary-bg-color: #EBEBEB;
     --secondary-bg-color: #292929;
@@ -20,6 +20,10 @@ html {
 
 body {
     background-color: var(--primary-bg-color);
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Utilities */
@@ -54,7 +58,7 @@ body {
 }
 
 #header .navbar-brand span {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 900;
     letter-spacing: 1px;
 }
@@ -73,45 +77,27 @@ body {
 }
 
 #header .navbar-toggler i {
-    font-size: 2em;
+    font-size: 28px;
 }
 
 #header .offcanvas-title {
-    font-size: 1.5em;
+    font-size: 24px;
 }
 
 #header .offcanvas-header button {
     border: none;
-    font-size: 2.5em;
+    font-size: 32px;
 }
 
 #header .nav-link {
     color: var(--primary-color);
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
     transition: .5s;
 }
 
 #header .nav-link:hover {
     color: var(--dark-color);
-}
-
-#header .nav-link.active {
-    color: var(--dark-color);
-}
-
-#header .btn {
-    background-color: var(--primary-color);
-    color: var(--light-color);
-    font-size: 20px;
-    border: none;
-    padding: 4px 16px;
-    margin-top: 20px;
-    transition: .5s;
-}
-
-#header .btn:hover {
-    background-color: var(--dark-color);
-    color: var(--light-color);
 }
 
 /* Main */
@@ -125,9 +111,8 @@ body {
 }
 
 #main .carousel-item img {
-    height: 50vh;
-    background-position: center;
-    background-size: cover;
+    height: 200px;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 #main .carousel-caption h4 {
@@ -143,30 +128,29 @@ body {
     display: flex;
     align-items: center;
     opacity: 1;
-    margin-top: 52px;
 }
 
 #main .carousel-control-prev i,
 #main .carousel-control-next i {
     color: var(--light-color);
-    font-size: 32px;
+    font-size: 24px;
 }
 
-.main-title {
-    height: 25vh;
+.title {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin: 32px 0;
 }
 
-.main-title h1 {
+.title h1 {
     font-size: 1.5em;
     margin-bottom: 16px;
 }
 
-.main-title p {
+.title p {
     margin-bottom: 0;
 }
 
@@ -180,56 +164,171 @@ body {
 }
 
 #about-section .about-text-container {
-    height: 100%;
-    margin-top: 32px;
+    background-color: var(--light-color);  
+    border-right: 2px solid var(--primary-color);
+    padding: 16px 8px;
+    margin-top: 16px;
 }
 
 #about-section .about-text-container h4 {
-    margin-bottom: 26px;
+    margin-bottom: 16px;
+}
+
+/* Product Section */
+#product-section {
+    margin-top: 32px;
+}
+
+#product-section .row {
+    margin: 32px 0;
+}
+
+#product-section .card {
+    background-color: var(--light-color);
+    border: none;
+    border-radius: 0;
+}
+
+#product-section .card img {
+    width: 100px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+#product-section .card h6 {
+    margin-bottom: 8px;
+}
+
+#product-section .card-footer {
+    background-color: var(--light-color);
+    border-top: 2px solid var(--primary-color);
+}
+
+#product-section .card-footer a {
+    transition: .5s;
+}
+
+#product-section .card-footer a:hover {
+    color: var(--dark-color);
+}
+
+.product-banner {
+    text-align: center;
+    padding: 32px 8px;
+}
+
+.product-text h2,
+.product-text p {
+    margin: 0;
+}
+
+.product-text h1 {
+    margin: 16px 0;
+}
+
+.product-text .btn {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-weight: 700;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 32px;
+}
+
+.product-text .btn:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+.product-image img {
+    width: 200px;
+    height: 300px;
+    margin-top: 32px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--primary-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
 }
 
 /* Responsive */
 @media screen and (min-width: 425px) {
     /* Main */
     #main .carousel-item img {
-        height: 60vh;
+        height: 225px;
     }
-       
-    .main-title {
-        height: 20vh;
+
+    /* About Section */
+    #about-section .about-image-container {
+        height: 450px;
     }
 }
 
 @media screen and (min-width: 768px) {
+    /* Header */
+    #header .container {
+        padding-left: 24px;
+    }
+
     /* Main */
+    #main {
+        padding: 0 24px;
+    }
+
     #main .carousel-item img {
-        height: 75vh;
+        height: 450px;
     } 
 
+    #main .carousel-control-prev i,
+    #main .carousel-control-next i {
+        font-size: 28px;
+    }
+
     /* About Section */
+    #about-section {
+        padding: 0 24px;
+    }
+
     #about-section .about-text-container {
-        border-right: 2px solid var(--primary-color);
+        height: 100%;
+        margin-top: 0;
+    }
+
+    /* Product Section */
+    .product-banner {
+        padding: 32px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .product-image img {
         margin-top: 0;
     }
 }
 
 @media screen and (min-width: 1024px) {
     /* Header */
+    #header .navbar-nav {
+        margin-right: -12px;
+    }
+
     #header .navbar-nav li {
         margin-right: 1em;
     }
 
-    #header .btn {
-        margin-top: 0;
-    }
-
     /* Main */
-    #main {
-        padding: 0 100px;
-    }
-
     #main .carousel-item img {
-        height: 85vh;
+        height: 550px;
     }
 
     #main .carousel-caption h4 {
@@ -240,22 +339,18 @@ body {
         font-size: 1.5em;
     }
 
-    #main .carousel-control-prev,
-    #main .carousel-control-next {
-        margin-top: 48px;
-    }
-
     #main .carousel-control-prev i,
     #main .carousel-control-next i {
-        font-size: 40px;
-    }
-
-    .main-title {
-        height: 15vh;
+        font-size: 32px;
     }
 
     /* About Section */
-    #about-section {
-        padding: 0 100px;
+    #about-section .about-image-container {
+        height: 475px;
+    }
+
+    /* Product Section */
+    .product-banner {
+        padding: 64px 300px;
     }
 }
